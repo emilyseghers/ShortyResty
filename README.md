@@ -1,7 +1,6 @@
 # ShortyResty URL Shortener
 
-[![topic: JSON]
-[![topic: http-handlers]
+Topics: JSON, httpHandlers, maps
 
 ## Overview
 
