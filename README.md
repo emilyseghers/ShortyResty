@@ -12,6 +12,14 @@ This program is available on port 8080. It responds to a POST request with endpo
 
 The other feature of this program is redirection. If a user makes a GET request with endpoint "/$ID" (ID being the randomaly generated ID) of the format "http://127.0.0.1:8080/ID" then the program will 302 redirect that user to the long form of the URL.
 
+## Request/Response Formatting
+
+POST JSON request should be of the format: {"url": "http://example.com/verylonguselessURLthatdoesnotseemtoend/123"}
+JSON response will be of the format: {"short_url": "http://127.0.0.1:8080/xxxxxxxx"} where xxxxxxxx is the ID
+
+GET request to your browser of client: http://127.0.0.1:8080/ID 
+This will redirect you to the long form of the URL if the ID is valid.
+
 ## Testing
 
 This program was tested using Postman to generate POST and GET requests.
