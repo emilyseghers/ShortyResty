@@ -79,7 +79,7 @@ func shorten(w http.ResponseWriter, r *http.Request) {
 	//Checking that the URL is valid
 	_, err = url.ParseRequestURI(request.Url)
 	if err != nil {
-		panic(err)
+		http.Error(w, "URL is not valid", http.StatusBadRequest)
 		return
 	}
 
@@ -138,7 +138,6 @@ func main() {
 	fmt.Printf("Starting server on port 8080")
 	handleRequests()
 }
-
 
 
 //Struct for http Requests, only content is the given URL.
