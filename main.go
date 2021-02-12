@@ -140,6 +140,7 @@ func main() {
 }
 
 
+
 //Struct for http Requests, only content is the given URL.
 type Req struct {
 	Url string
