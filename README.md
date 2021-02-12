@@ -22,6 +22,11 @@ GET request to your browser of client: http://127.0.0.1:8080/ID
 
 This will redirect you to the long form of the URL if the ID is valid.
 
-## Testing
+## Testing and Requirements 
 
 This program was tested using Postman to generate POST and GET requests.
+
+This program utilizes the gorilla/mux and golang/gddo/httputil/header github repositories.
+Execute: 
+go get -u github.com/gorilla/mux
+go get -u github.com/golang/gddo/httputil/header in your terminal before running.
